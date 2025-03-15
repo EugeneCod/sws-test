@@ -1,0 +1,24 @@
+@use '@/styles/variables' as v;
+
+.root {
+  display: flex;
+  column-gap: 14px;
+  height: 32px;
+  padding: 0 5px 0 16px;
+  align-items: center;
+  cursor: pointer;
+
+  &.active {
+    background-color: v.$cl-additional-fg;
+  }
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon {
+    width: 16.5px;
+    height: 16.5px;
+  }
+}

@@ -1,0 +1,12 @@
+@use '@/styles/variables' as v;
+
+.root {
+  padding-left: 12px;
+  border-bottom: 1px solid v.$cl-border;
+}
+
+.data-value {
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: 0.1px;
+}

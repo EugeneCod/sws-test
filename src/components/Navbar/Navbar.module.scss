@@ -3,6 +3,7 @@
 .root {
   background-color: v.$cl-additional-bg;
   min-height: calc(100vh - v.$header-height);
+  border-right: 1px solid v.$cl-border;
 }
 
 .header {

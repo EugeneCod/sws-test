@@ -34,8 +34,8 @@ export const Navbar = (props: PropsWithClassName) => {
         <button className={s['unwrap-btn']} type="button" />
       </div>
       <ul className={s.navlist}>
-        {mockProjects.map((item) => (
-          <NavTab text={item.name} isActive={item.id === activeId} />
+        {mockProjects.map((item, idx) => (
+          <NavTab key={idx} text={item.name} isActive={item.id === activeId} />
         ))}
       </ul>
     </div>

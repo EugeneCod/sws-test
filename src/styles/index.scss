@@ -1,12 +1,13 @@
 @use './variables' as v;
 @use './libs/normalise';
-@use './fonts';
+@import './fonts/index.css';
 
-:root {
+  :root {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0;
+  font-size: 14px;
 
   color: v.$cl-main-fg;
   background-color: v.$cl-main-bg;

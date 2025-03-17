@@ -1,0 +1,84 @@
+@use '@/styles/variables' as v;
+
+.row {
+  height: 60px;
+}
+
+.level-data {
+  padding-left: 12px;
+  border-bottom: 1px solid v.$cl-border;
+  box-sizing: border-box;
+}
+
+.row-name-data {
+  box-sizing: border-box;
+}
+
+.numeric-data {
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.panel-container {
+  position: relative;
+}
+
+.control-panel {
+  position: relative;
+  z-index: 20;
+  padding: 2px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  justify-self: flex-start;
+
+  &:hover {
+    background-color: v.$cl-border;
+    padding-right: 7px;
+    margin-right: -31px;
+
+    & .trash-btn {
+      display: block;
+    }
+  }
+}
+
+.panel-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &.create-btn {
+    width: 24px;
+    height: 24px;
+    background-image: url(@/assets/icons/doc.svg);
+    background-position: center;
+  }
+  &.trash-btn {
+    width: 16px;
+    height: 16px;
+    background-image: url(@/assets/icons/trash.svg);
+    background-position: center;
+    display: none;
+  }
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: v.$cl-lvl-lines;
+  z-index: 10;
+  position: absolute;
+  top: 23px;
+  left: 13px;
+}
+
+.horizontal-line {
+  z-index: 10;
+  height: 1px;
+  width: 11px;
+  background-color: v.$cl-lvl-lines;
+  position: absolute;
+  top: 13px;
+  left: -6px;
+}

@@ -1,0 +1,17 @@
+@use '@/styles/variables' as v;
+
+.root {
+  width: 100%;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  padding: 0 10px;
+  color: v.$cl-input-txt;
+  border: 1px solid v.$cl-border;
+  border-radius: 6px;
+  background-color: transparent;
+  outline: none;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}

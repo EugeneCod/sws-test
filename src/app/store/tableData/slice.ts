@@ -50,7 +50,6 @@ const tableDataSlice = createSlice({
       }
     },
 
-    // Добавление пустой строки в качестве корневой или дочерней
     addEmptyChildRow(
       state,
       action: PayloadAction<{ parentId: number | null; newRow: FullRowData }>,

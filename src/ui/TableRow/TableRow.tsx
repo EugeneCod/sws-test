@@ -11,7 +11,7 @@ import { useRowData, useRowStore } from '@/hooks';
 
 const HORISONTAL_LINE_HEIGHT_PX = 51;
 const ADDITIONAL_LINE_HEIGHT_MULTIPLIER_PX = 9;
-const INITIAL_LEVEL_DATA_WIDTH_PX = 70;
+const INITIAL_LEVEL_DATA_WIDTH_PX = 90;
 const LEVEL_DATA_PADDING_PX = 20;
 
 export const TableRow = (props: TableRowProps) => {

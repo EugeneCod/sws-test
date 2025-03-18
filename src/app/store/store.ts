@@ -1,13 +1,12 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-
-import tableReducer from './table/slice';
-
 import type { Action, ThunkAction } from '@reduxjs/toolkit';
+
+import tableDataReducer from './tableData/slice';
 
 import { outlayRowApi } from '@/app/store/api/outlayRowApi';
 
 const rootReducer = combineReducers({
-  table: tableReducer,
+  tableData: tableDataReducer,
   [outlayRowApi.reducerPath]: outlayRowApi.reducer,
 });
 

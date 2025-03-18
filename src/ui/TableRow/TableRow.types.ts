@@ -1,7 +1,7 @@
-import { RowData } from '@/types/api';
+import { FullRowData } from '@/types/api';
 
 export interface TableRowProps {
   level: number;
-  rowData: RowData;
-  tableData: RowData[];
+  rowData: FullRowData;
+  parentId: null | number;
 }
